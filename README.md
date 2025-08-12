@@ -164,3 +164,7 @@ Se añadio el parametro type:module en el package.json
   "type": "module",
   "version": "1.0.0",
   "main": "index.js",````
+
+
+
+
