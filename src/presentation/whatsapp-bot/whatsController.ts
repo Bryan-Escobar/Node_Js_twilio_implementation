@@ -53,7 +53,7 @@ export class WhatsController {
     }
     else {
 
-      const response = await GeminiService.ask(incomingMsg, "gemini-1.5-flash")
+      const response = await GeminiService.ask(incomingMsg, "gemini-2.0-flash")
       twiml.message(response);
     }
     res.writeHead(200, { "Content-Type": "text/xml" });
