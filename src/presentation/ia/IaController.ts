@@ -32,7 +32,7 @@ export class IaController {
 
     try {
       const respuesta = await GeminiService.ask(prompt, req.params.model);
-      res.status(200).json({ respuesta });
+      res.status(200).json(respuesta);
       return;
     } catch (error: CustomError | any) {
       res

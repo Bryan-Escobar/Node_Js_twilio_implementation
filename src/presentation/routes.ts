@@ -1,5 +1,7 @@
 import { Router } from "express";
 import { WhatsRoutes } from "./whatsapp-bot/routes";
+import { IaController } from "./ia/IaController";
+import { IaRoutes } from "./ia/routes";
 
 export class AppRoutes {
   static get routes(): Router {
@@ -8,7 +10,7 @@ export class AppRoutes {
 
     router.use("/api/whatsapp-bot", WhatsRoutes.routes);
 
-
+    router.use("/api/ai", IaRoutes.routes);
 
     router.get("/api/overview", (req, res) => {
       console.log("la api esta funcionando correctamente");
